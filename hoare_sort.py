@@ -10,8 +10,8 @@ def hoare_sort(lst):
         eq = [i for i in lst if i == x]
         right = [i for i in lst if i > x]
         
-        lst = sort(left) + eq + sort(right)
+        lst = hoare_sort(left) + eq + hoare_sort(right)
 
     return lst
 
-print(sort(lst))
+print(hoare_sort(lst))
