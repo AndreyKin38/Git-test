@@ -1,2 +1,1 @@
-class Hello:
-    pass
+print("Hello World!!!")
